@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Agent — Mac mini de DIY23</title>
+<meta name="description" content="Hermes Agent is a personal, single-user automation client running on one Mac mini. It connects only to its owner's own Google Workspace account.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+  <header class="site">
+    <p class="kicker">Personal automation client</p>
+    <h1>Hermes Agent — Mac mini de DIY23</h1>
+    <p class="sub">A single-user assistant that works with the Google account of the person who runs it.</p>
+  </header>
+
+  <h2>What this application is</h2>
+  <p>
+    Hermes Agent is a private automation client installed and operated by an individual
+    (the "operator") on a single Apple Mac mini computer that the operator owns and keeps
+    at home. There is no public sign-up, no multi-tenant service, no server-side account
+    system and no other users. It is the operator's own tool for their own data.
+  </p>
+  <p>
+    The client connects to exactly one Google account — the operator's — after the operator
+    grants permission through Google's standard OAuth 2.0 consent screen. It cannot access,
+    list or act on any other person's Google account, and it has no mechanism to do so.
+  </p>
+
+  <h2>What it does with Google services</h2>
+  <table>
+    <tr><th>Service</th><th>Use</th></tr>
+    <tr><td>Gmail</td><td>Search and read the operator's messages, send mail on the operator's instruction, apply labels.</td></tr>
+    <tr><td>Google Drive</td><td>Find, read, upload, download, create folders, rename, trash files, and share a file with a recipient the operator names.</td></tr>
+    <tr><td>Google Docs</td><td>Read documents, create documents, append text to documents.</td></tr>
+    <tr><td>Google Sheets</td><td>Read cell ranges, create spreadsheets, write and append rows.</td></tr>
+    <tr><td>Google Calendar</td><td>List upcoming events, create and delete events.</td></tr>
+    <tr><td>Contacts</td><td>Read the operator's own contact list to resolve names to addresses.</td></tr>
+  </table>
+  <p>
+    Every action is initiated by the operator in a conversation with the assistant. The
+    client sends nothing to third parties, contains no advertising, and never resells or
+    redistributes Google user data.
+  </p>
+
+  <div class="panel">
+    <p>
+      <strong>One account, one machine.</strong> The OAuth tokens are stored in a single file
+      on the operator's own computer with owner-only permissions. No copy of that token, and
+      no copy of Google user data, is kept on any server operated by this project — there is
+      no such server.
+    </p>
+  </div>
+
+  <h2>Your control</h2>
+  <p>
+    Access is granted and withdrawn entirely from the Google account side. The operator can
+    revoke the application's access at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+    which invalidates the stored token immediately.
+  </p>
+
+  <h2>Documents</h2>
+  <nav class="links">
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of service</a>
+    <a href="mailto:agent23.dev@gmail.com">Contact</a>
+  </nav>
+
+  <footer class="site">
+    <p>
+      Operated by agent23, an individual established in Belgium.
+      Contact: <a href="mailto:agent23.dev@gmail.com">agent23.dev@gmail.com</a>.
+      Last updated 29/10/2026.
+    </p>
+    <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+  </footer>
+
+</main>
+</body>
+</html>
